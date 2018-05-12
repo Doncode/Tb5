@@ -16,13 +16,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SergeySviridov/ProheNetBot.git"
+    "url": "git+https://github.com/SergeySviridov/Tb5"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SergeySviridov/ProheNetBot/issues"
+    "url": "https://github.com/SergeySviridov/Tb5/issues"
   },
-  "homepage": "https://github.com/SergeySviridov/ProheNetBot#readme"
+  "homepage": "https://github.com/SergeySviridov/Tb5#readme"
 }
