@@ -1,8 +1,7 @@
 var TelegramBot=require('node-telegram-bot-api');
-var token='AAHUpVyk0Gex6myrTDqjpXKuTtGMrWfA-Rw';
+var token='569418321:AAHUpVyk0Gex6myrTDqjpXKuTtGMrWfA-Rw';
 // Включить опрос сервера
 var bot = new TelegramBot(token, {polling: true});
-
 
 // Написать мне ... (/echo Hello World! - пришлет сообщение с этим приветствием.)
 bot.onText(/\/echo (.+)/, function (msg, match) {
@@ -19,9 +18,8 @@ bot.on('message', function (msg) {
     bot.sendPhoto(chatId, photo, {caption: 'Ух ты'});
 });
 
-
 var notes=[];
-var notes[0]={'111','17:10','УРА '};
+var notes[0]={'111','19:23','УРА '};
 bot.onText(/\/напомни (.+) в (.+)/,function(msg,match){
 		var userId=msg.from.id;
 		var text=match[1];
