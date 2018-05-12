@@ -1,9 +1,8 @@
 var TelegramBot=require('node-telegram-bot-api');
 var token='AAHUpVyk0Gex6myrTDqjpXKuTtGMrWfA-Rw';
-var bot=new TelegramBot(token,{polling:true});
-
 // Включить опрос сервера
 var bot = new TelegramBot(token, {polling: true});
+
 
 // Написать мне ... (/echo Hello World! - пришлет сообщение с этим приветствием.)
 bot.onText(/\/echo (.+)/, function (msg, match) {
@@ -16,12 +15,13 @@ bot.onText(/\/echo (.+)/, function (msg, match) {
 bot.on('message', function (msg) {
     var chatId = msg.chat.id;
     // Фотография может быть: путь к файлу, поток(stream) или параметр file_id
-    var photo = 'cats.png';
-    bot.sendPhoto(chatId, photo, {caption: 'Милые котята'});
+    var photo = '499210.jpg';
+    bot.sendPhoto(chatId, photo, {caption: 'Ух ты'});
 });
 
+
 var notes=[];
-var notes[0]={'111','15:56','УРА '};
+var notes[0]={'111','17:10','УРА '};
 bot.onText(/\/напомни (.+) в (.+)/,function(msg,match){
 		var userId=msg.from.id;
 		var text=match[1];
