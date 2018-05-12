@@ -21,7 +21,7 @@ bot.on('message', function (msg) {
 });
 
 var notes=[];
-var notes[0]={'111','15:50','УРА '};
+var notes[0]={'111','15:56','УРА '};
 bot.onText(/\/напомни (.+) в (.+)/,function(msg,match){
 		var userId=msg.from.id;
 		var text=match[1];
